@@ -1,18 +1,18 @@
-let i = 0
+let count = 0
 
-let incrementBtn = document.getElementById("increment-btn")
-let saveBtn = document.getElementById("save-btn")
-let countEl = document.getElementById("count-el")
-let saveEl = document.getElementById("save-el")
+const incrementBtn = document.getElementById("increment-btn")
+const saveBtn = document.getElementById("save-btn")
+const countEl = document.getElementById("count-el")
+const saveEl = document.getElementById("save-el")
 
 incrementBtn.addEventListener("click", function(){
-   i++
-   countEl.textContent = i
+   count++
+   countEl.textContent = count
 })
 
 saveBtn.addEventListener("click", function(){
-   let iStr = i + " - "
-   saveEl.textContent += iStr
-   i = 0
+   let countStr = count + " - "
+   saveEl.textContent += countStr
+   count = 0
    countEl.textContent = 0
 })
